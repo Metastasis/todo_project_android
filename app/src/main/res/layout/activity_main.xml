@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -10,8 +11,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="io.github.metastasis.todoproject.MainActivity">
 
-    <TextView
+    <com.scalified.fab.ActionButton
+        android:id="@+id/ab_add_todo_item_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:button_color="@color/fab_material_pink_500"
+        app:button_colorPressed="@color/fab_material_pink_900"
+        app:image="@drawable/fab_plus_icon" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/lv_todo_list"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
