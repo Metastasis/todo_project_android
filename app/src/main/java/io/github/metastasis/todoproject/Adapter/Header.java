@@ -1,11 +1,15 @@
-package io.github.metastasis.todoproject;
+package io.github.metastasis.todoproject.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
+import io.github.metastasis.todoproject.Adapter.Item;
+import io.github.metastasis.todoproject.Adapter.TodoListAdapter;
+import io.github.metastasis.todoproject.R;
+
 public class Header implements Item {
-    private final String title;
+    final String title;
 
     public Header(String title) {
         this.title = title;
@@ -21,7 +25,6 @@ public class Header implements Item {
         View view;
         if (convertView == null) {
             view = (View) inflater.inflate(R.layout.todo_list_header, null);
-            // Do some initialization
         } else {
             view = convertView;
         }

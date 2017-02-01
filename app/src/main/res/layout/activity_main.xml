@@ -5,11 +5,14 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="io.github.metastasis.todoproject.MainActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/lv_todo_list"
+        android:layout_centerHorizontal="true" />
 
     <com.scalified.fab.ActionButton
         android:id="@+id/ab_add_todo_item_button"
@@ -22,11 +25,4 @@
         app:button_color="@color/fab_material_pink_500"
         app:button_colorPressed="@color/fab_material_pink_900"
         app:image="@drawable/fab_plus_icon" />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:id="@+id/lv_todo_list"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>

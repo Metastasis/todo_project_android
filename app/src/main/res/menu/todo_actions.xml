@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/create_todo"
+        android:icon="@mipmap/done_icon"
+        android:title="@string/todo_action_create"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/back_to_main"
+        android:icon="@mipmap/back_icon"
+        android:title="@string/todo_action_back"
+        app:showAsAction="ifRoom" />
+</menu>

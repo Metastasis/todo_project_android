@@ -1,4 +1,4 @@
-package io.github.metastasis.todoproject;
+package io.github.metastasis.todoproject.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

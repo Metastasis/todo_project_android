@@ -1,4 +1,4 @@
-package io.github.metastasis.todoproject;
+package io.github.metastasis.todoproject.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
 import java.util.List;
+
+import io.github.metastasis.todoproject.R;
 
 public class TodoListAdapter extends ArrayAdapter<Item> {
     private LayoutInflater mInflater;

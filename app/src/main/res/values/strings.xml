@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Задачи</string>
+    <string name="todo_add_task_title">Задача</string>
+    <string name="todo_add_category_title">Категория</string>
+    <string name="todo_add_task_hint">Название задачи...</string>
+    <string name="todo_action_create">Создать</string>
+    <string name="todo_action_back">Назад</string>
+    <string name="kIndexRequest">https://powerful-chamber-90866.herokuapp.com</string>
+    <string name="kUpdateRequest">https://powerful-chamber-90866.herokuapp.com/projects/update</string>
+    <string name="loading_error">Произошла ошибка во время соединения с сервером.</string>
 </resources>
